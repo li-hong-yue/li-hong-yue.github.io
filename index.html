@@ -97,7 +97,7 @@
         <a href="#about">About</a>
         <a href="#study">Study</a>
         <a href="#research">Research</a>
-        <a href="#venture">Venture</a>
+        <a href="#explore">Explore</a>
     </nav>
 
     <!-- Header with Name and Photo -->
@@ -201,10 +201,33 @@
     </section> 
     -->
 
-    <section id="venture">
-        <h2>Venture</h2>
+    <section id="explore">
+        <h2>Explore</h2>
         <p>I love to explore the world!</p>
-        <p></p>
+        <div id="map" style="width: 100%; height: 500px;"></div>
+        
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var map = L.map('map').setView([20, 0], 2);
+                
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; OpenStreetMap contributors'
+                }).addTo(map);
+                
+                var locations = [
+                    { lat: 37.7749, lng: -122.4194, name: "San Francisco, USA" },
+                    { lat: 48.8566, lng: 2.3522, name: "Paris, France" },
+                    { lat: 35.6895, lng: 139.6917, name: "Tokyo, Japan" }
+                ];
+                
+                locations.forEach(function(loc) {
+                    L.marker([loc.lat, loc.lng]).addTo(map)
+                        .bindPopup(loc.name);
+                });
+            });
+        </script>
     </section>
 
     <!-- Awards Section -->

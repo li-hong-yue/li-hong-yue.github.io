@@ -220,7 +220,7 @@
     
                 var locations = [];
     
-                fetch('locations.txt')
+                fetch('https://raw.githubusercontent.com/li-hong-yue/li-hong-yue.github.io/refs/heads/main/locations.txt')
                 .then(response => response.text())
                 .then(text => {
                     locations = text.split('\n').map(line => line.trim()).filter(line => line);

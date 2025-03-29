@@ -1,14 +1,51 @@
 San Francisco, USA 
 New York, USA 
 Los Angeles, USA 
+Boston, USA
+Las Vegas, USA 
 
+London, UK
+Oxford, UK 
+Cambridge, UK 
+Edinburgh, UK 
+Cardiff, UK 
+Belfast, UK 
+York, UK 
+Bath, UK 
+
+Beijing, China
+Tianjin, China 
+
+Wuhan, China 
+Zhangjiajie
+
+Shanghai, China 
+Nanjing, China 
+Wuxi, China 
+Zhenjiang, China 
+Yangzhou, China 
+
+Ningbo
+Xiamen
+
+Taiyuan, China 
+Datong, China 
+
+Sanya, China 
+Shenzhen, China 
+Lijiang, China 
+
+Hong Kong
+Macau
+
+Busan, South Korea
+Jeju-do, South Korea
 
 Paris, France
 
-
-
-Beijing, China
-Shanghai, China 
-Nanjing, China 
-Yangzhou, China 
-Taiyuan, China 
+Melbourne, Australia
+Sydney, Australia
+Cairns, Australia
+Auckland, New Zealand
+Queenstown, New Zealand,
+Christchurch, New Zealand

@@ -205,30 +205,41 @@
         <h2>Explore</h2>
         <p>I love to explore the world!</p>
         <div id="map" style="width: 100%; height: 500px;"></div>
-        
+    
+        <!-- Leaflet CSS & JS -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 var map = L.map('map').setView([20, 0], 2);
-                
+    
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; OpenStreetMap contributors'
                 }).addTo(map);
-                
-                var locations = [
-                    { lat: 37.7749, lng: -122.4194, name: "San Francisco, USA" },
-                    { lat: 48.8566, lng: 2.3522, name: "Paris, France" },
-                    { lat: 35.6895, lng: 139.6917, name: "Tokyo, Japan" }
-                ];
-                
-                locations.forEach(function(loc) {
-                    L.marker([loc.lat, loc.lng]).addTo(map)
-                        .bindPopup(loc.name);
-                });
+    
+                var locations = ["San Francisco, USA", "Paris, France", "Beijing, China", "Tokyo, Japan"];
+    
+                function addMarker(place) {
+                    var url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(place)}`;
+                    
+                    fetch(url)
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.length > 0) {
+                                var lat = data[0].lat;
+                                var lng = data[0].lon;
+                                L.marker([lat, lng]).addTo(map).bindPopup(place);
+                            }
+                        })
+                        .catch(error => console.error("Error fetching location:", error));
+                }
+    
+                locations.forEach(addMarker);
             });
         </script>
     </section>
+    
 
     <!-- Awards Section -->
 <section id="awards">

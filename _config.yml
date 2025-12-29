@@ -23,9 +23,9 @@ repository               : "li-hong-yue/li-hong-yue.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "avatar.jpeg"
+  avatar           : "files/avatar.jpeg"
   name             : #""
-  pronouns         : # example: "she/her"  
+  pronouns         : # "" 
   bio              : #""
   location         : #""
   employer         : #"Red Brick University"
@@ -95,7 +95,7 @@ author:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:

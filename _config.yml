@@ -23,7 +23,7 @@ repository               : "li-hong-yue/li-hong-yue.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "files/avatar.jpeg"
+  avatar           : "files/avatar.png"
   name             : #""
   pronouns         : # "" 
   bio              : #""

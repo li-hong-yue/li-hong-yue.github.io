@@ -8,28 +8,83 @@ permalink: /explore/
 
 <div id="map" style="width: 100%; height: 500px;"></div>
 
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var map = L.map('map').setView([20, 0], 2);
+    
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; OpenStreetMap contributors'
+                }).addTo(map);
+    
+                var locations = [
+    { lat: 37.7749, lng: -122.4194, name: "San Francisco, USA" },
+    { lat: 34.0522, lng: -118.2437, name: "Los Angeles, USA" },
+    { lat: 39.0968, lng: -120.0324, name: "Lake Tahoe, USA" },
+    { lat: 36.1699, lng: -115.1398, name: "Las Vegas, USA" },
 
-<script>
-  // Initialize the map
-  var map = L.map('map').setView([20, 0], 2); // World view
+    { lat: 40.7128, lng: -74.0060, name: "New York, USA" },
+    { lat: 42.3601, lng: -71.0589, name: "Boston, USA" },
 
-  // Add OpenStreetMap tiles
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
+    { lat: 44.4280, lng: -110.5885, name: "Yellowstone National Park, USA" },
 
-  // Add pins for cities
-  var cities = [
-    {name: "Stanford, CA", coords: [37.4275, -122.1697]},
-    {name: "Paris, France", coords: [48.8566, 2.3522]},
-    {name: "Tokyo, Japan", coords: [35.6895, 139.6917]},
-    // Add more cities here
-  ];
+    { lat: 25.7617, lng: -80.1918, name: "Miami, Florida, USA" },
+    { lat: 28.5383, lng: -81.3792, name: "Orlando, Florida, USA" },
+    { lat: 29.9012, lng: -81.3124, name: "St. Augustine, Florida, USA" },
+    { lat: 27.9506, lng: -82.4572, name: "Tampa, Florida, USA" },
 
-  cities.forEach(function(city) {
-    L.marker(city.coords).addTo(map)
-      .bindPopup(city.name);
-  });
-</script>
+    { lat: 32.0603, lng: 118.7969, name: "Nanjing, China" },
+    { lat: 39.9042, lng: 116.4074, name: "Beijing, China" },
+    
+    { lat: 30.5928, lng: 114.3055, name: "Wuhan, China" },
+    { lat: 29.1170, lng: 110.4789, name: "Zhangjiajie, China" },
+    { lat: 31.2304, lng: 121.4737, name: "Shanghai, China" },
+    { lat: 35.5958, lng: 116.9919, name: "Qufu, China" },
+    
+    
+    { lat: 32.3936, lng: 119.4129, name: "Yangzhou, China" },
+    { lat: 29.8683, lng: 121.5439, name: "Ningbo, China" },
+    { lat: 24.4798, lng: 118.0894, name: "Xiamen, China" },
+    { lat: 37.8706, lng: 112.5507, name: "Taiyuan, China" },
+    { lat: 40.0764, lng: 113.3000, name: "Datong, China" },
+    { lat: 18.2528, lng: 109.5119, name: "Sanya, China" },
+    { lat: 22.5429, lng: 114.0629, name: "Shenzhen, China" },
+    { lat: 26.8550, lng: 100.2278, name: "Lijiang, China" },
+    { lat: 30.5728, lng: 104.0668, name: "Chengdu, China" },
+    { lat: 22.3193, lng: 114.1694, name: "Hong Kong" },
+    { lat: 22.1987, lng: 113.5439, name: "Macau" },
+
+    { lat: 35.1796, lng: 129.0756, name: "Busan, South Korea" },
+    { lat: 33.4996, lng: 126.5312, name: "Jeju-do, South Korea" },
+
+    { lat: 51.5074, lng: -0.1278, name: "London, UK" },
+    { lat: 51.7520, lng: -1.2577, name: "Oxford, UK" },
+    { lat: 52.2053, lng: 0.1218, name: "Cambridge, UK" },
+    { lat: 55.9533, lng: -3.1883, name: "Edinburgh, UK" },
+    { lat: 51.4816, lng: -3.1791, name: "Cardiff, UK" },
+    { lat: 54.5973, lng: -5.9301, name: "Belfast, UK" },
+    { lat: 53.9590, lng: -1.0815, name: "York, UK" },
+    { lat: 51.3758, lng: -2.3599, name: "Bath, UK" },
+
+    { lat: 48.8566, lng: 2.3522, name: "Paris, France" },
+    { lat: 41.9028, lng: 12.4964, name: "Rome, Italy" },
+    { lat: 45.4408, lng: 12.3155, name: "Venice, Italy" },
+    { lat: 43.7696, lng: 11.2558, name: "Florence, Italy" },
+    { lat: 50.1109, lng: 8.6821, name: "Frankfurt, Germany" },
+    { lat: 49.6117, lng: 6.1319, name: "Luxembourg City, Luxembourg" },
+    { lat: 46.6863, lng: 7.8632, name: "Interlaken, Switzerland" },
+
+    { lat: -37.8136, lng: 144.9631, name: "Melbourne, Australia" },
+    { lat: -33.8688, lng: 151.2093, name: "Sydney, Australia" },
+    { lat: -16.9186, lng: 145.7781, name: "Cairns, Australia" },
+    { lat: -36.8485, lng: 174.7633, name: "Auckland, New Zealand" },
+    { lat: -45.0312, lng: 168.6626, name: "Queenstown, New Zealand" },
+    { lat: -43.5321, lng: 172.6362, name: "Christchurch, New Zealand" },
+];
+    locations.forEach(function(location) {
+        L.marker([location.lat, location.lng]).addTo(map).bindPopup(location.name);
+        });
+    });
+    </script>

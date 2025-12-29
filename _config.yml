@@ -23,19 +23,19 @@ repository               : "li-hong-yue/li-hong-yue.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "files/avatar.png"
-  name             : #""
+  avatar           : "/assets/images/avatar.png"
+  name             : "Hongyue Li"
   pronouns         : # "" 
   bio              : #""
   location         : #""
   employer         : #"Red Brick University"
   uri              : # URL
-  email            : #"none@example.org" 
+  email            : "lihongyuelhy@gmail.com" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=NSG_X-sAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : #"https://orcid.org/yourorcidurl"
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : hongyueli
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

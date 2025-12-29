@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a student at Stanford University studying Mathematics and Computer Science.
+Hi! I am a graduate student at Stanford University.
 
 
 

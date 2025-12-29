@@ -6,7 +6,7 @@ permalink: /explore/
 
 # My Travels
 
-<div id="map" style="height: 600px;"></div>
+<div id="map" style="width: 100%; height: 500px;"></div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>

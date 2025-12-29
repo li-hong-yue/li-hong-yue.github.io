@@ -23,12 +23,12 @@ repository               : "li-hong-yue/li-hong-yue.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/assets/images/avatar.png"
+  avatar           : "avatar.png"
   name             : "Hongyue Li"
   pronouns         : # "" 
   bio              : #""
   location         : #""
-  employer         : #"Red Brick University"
+  employer         : #""
   uri              : # URL
   email            : "lihongyuelhy@gmail.com" 
 
@@ -107,7 +107,7 @@ comments:
   facebook:
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : "light" # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"

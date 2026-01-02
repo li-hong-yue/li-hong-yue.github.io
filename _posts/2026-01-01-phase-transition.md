@@ -109,32 +109,14 @@ emphasize the connection with quantum field theory.
 Consider the Gaussian free energy in the presence of an external source
 $J(x)$ (identified with the magnetic field): 
 
-$$F_0[\phi]
-=
-\int d^d x
-\left[
-\frac{\gamma}{2} (\partial_\mu \phi)^2
-+
-\frac{\mu^2}{2} \phi^2
--
-J(x)\phi(x)
-\right].$$
+$$F_0[\phi]=\int d^d x\left[\frac{\gamma}{2} (\partial_\mu \phi)^2+\frac{\mu^2}{2}\phi^2-J(x)\phi(x)\right].$$
 
 By Fourier transforming and completing the square in the Gaussian
 functional integral, the generating functional is 
 
-$$Z_0[J]
-=
-\int \mathcal D\phi \, e^{-\beta F_0[\phi]}
-=
-Z_0[0]\,
-\exp\!\left[
-\frac{\beta}{2}
-\int d^d x\, d^d y\;
-J(x)\, D_F(x-y)\, J(y)
-\right].$$
+$$Z_0[J]=\int \mathcal D\phi \, e^{-\beta F_0[\phi]}=Z_0[0]\,\exp\!\left[\fra{\beta}{2}\int d^d x\, d^d y\;J(x)\, D_F(x-y)\, J(y)\right]$$
 
-The propagator $D_F(x-y)$ is 
+here the propagator is 
 
 $$D_F(r)=\frac{1}{\gamma}\int \frac{d^d k}{(2\pi)^d}\frac{e^{i k \cdot r}}{k^2 + \xi^{-2}},\qquad r = x-y,$$ 
 
@@ -178,19 +160,19 @@ Thus, the correlation length $\xi$ sets the characteristic length scale
 of fluctuations in the system.
 
 
-# upper critical dimension
-    The mean-field results hold in high dimensions but break down in low dimensions.
-Recall the situation for \( T < T_c \).
+### upper critical dimension
+
+The mean-field results hold in high dimensions but break down in low dimensions.
+Recall the situation for \\(T < T_c\\).
 In order to trust the mean-field approximation, these fluctuations must be small
 compared to the background around which they fluctuate. That is, we require
-\[
+$$
 \langle \phi^2 \rangle \ll \langle \phi \rangle^2 \sim m_0^2 .
-\]
-
+$$
 To estimate the size of the fluctuations, note that correlations decay beyond the
-correlation length \( \xi \). We therefore integrate the two-point function over a
-ball of radius \( \xi \). The relevant dimensionless ratio is
-\[
+correlation length \\(\xi\\). We therefore integrate the two-point function over a
+ball of radius \\(\xi\\). The relevant dimensionless ratio is
+$$
 R
 =
 \frac{\displaystyle \int_0^\xi d^d x \, \langle \phi(x)\phi(0) \rangle}
@@ -200,33 +182,28 @@ R
 \int_0^\xi dr \, r^{d-1} \frac{1}{r^{d-2}}
 \sim
 \frac{\xi^{2-d}}{m_0^2}.
-\]
-
+$$
 In order for mean-field theory to be reliable, we require
-\[
+$$
 R \ll 1 .
-\]
-This condition is known as the \emph{Ginzburg criterion}.
-
+$$
+This condition is known as the *Ginzburg criterion*.
 As we approach the critical point, the correlation length diverges and the order
 parameter vanishes. According to mean-field theory,
-\[
+$$
 m_0 \sim |T - T_c|^{1/2},
 \qquad
 \xi \sim |T - T_c|^{-1/2}.
-\]
-
-Substituting these scalings into the expression for \( R \), we find
-\[
+$$
+Substituting these scalings into the expression for \\(R\\), we find
+$$
 R \sim |T - T_c|^{(d-4)/2}.
-\]
-
-We therefore learn that as \( T \to T_c \), mean-field theory is trustworthy only if
-\[
+$$
+We therefore learn that as \\(T \to T_c\\), mean-field theory is trustworthy only if
+$$
 d > d_c = 4 .
-\]
-
-The dimension \( d_c = 4 \) is the \emph{upper critical dimension} for the Ising
+$$
+The dimension \\(d_c = 4\\) is the *upper critical dimension* for the Ising
 universality class.
 
 ## Renormalization

@@ -296,11 +296,7 @@ The partition function becomes
   Z
   =
   \int \mathcal{D}\phi^- \, \mathcal{D}\phi^+
-  \exp\!\left[
-  - F_0[\phi^-]
-  - F_0[\phi^+]
-  - F_{\text{int}}[\phi^- + \phi^+]
-  \right].
+  \exp\!\left[- F_0[\phi^-]- F_0[\phi^+]- F_{\text{int}}[\phi^- + \phi^+]\right].
 \\]
 
 Integrating out the fast modes defines an effective free energy \\(F'\\) for the
@@ -314,16 +310,13 @@ Z
 
 with
 
-$
+\\[
   e^{-F'[\phi^-]}
   =
   e^{-F_0[\phi^-]}
   \int \mathcal{D}\phi^+
-  \exp\!\left[
-  - F_0[\phi^+]
-  - F_{\text{int}}[\phi^- + \phi^+]
-  \right].
-$
+  \exp\!\left[- F_0[\phi^+]- F_{\text{int}}[\phi^- + \phi^+]\right].
+\\]
 
 Define expectation values with respect to the Gaussian measure
 $$
@@ -345,21 +338,18 @@ $
   \right\rangle_+ .
 $
 
-Expanding the logarithm using the cumulant (linked-cluster) expansion,
+Expanding the logarithm and the exponential using Taylor expansion,
 $
   \ln \left\langle
   e^{-F_{\text{int}}}
   \right\rangle_+
-  =
-  - \langle F_{\text{int}} \rangle_+
+  =- \langle F_{\text{int}} \rangle_+
   +
   \frac{1}{2}
   \left(
-  \langle F_{\text{int}}^2 \rangle_+
-  -
+  \langle F_{\text{int}}^2 \rangle_+ -
   \langle F_{\text{int}} \rangle_+^2
-  \right)
-  -
+  \right) -
   \frac{1}{3!}
   \langle F_{\text{int}}^3 \rangle_{+,c}
   + \cdots ,

@@ -114,7 +114,7 @@ $$F_0[\phi]=\int d^d x\left[\frac{\gamma}{2} (\partial_\mu \phi)^2+\frac{\mu^2}{
 By Fourier transforming and completing the square in the Gaussian
 functional integral, the generating functional is 
 
-$$Z_0[J]=\int \mathcal D\phi \, e^{-\beta F_0[\phi]}=Z_0[0]\,\exp\!\left[\fra{\beta}{2}\int d^d x\, d^d y\;J(x)\, D_F(x-y)\, J(y)\right]$$
+$$Z_0[J]=\int \mathcal D\phi \, e^{-\beta F_0[\phi]}=Z_0[0]\,\exp\!\left[\frac{\beta}{2}\int d^d x\, d^d y\;J(x)\, D_F(x-y)\, J(y)\right]$$
 
 here the propagator is 
 
@@ -219,7 +219,8 @@ The critical exponents we derived from mean-field method are correct for \\(d>4\
 We are interested in dimension \\(d<4\\).
 
 
-Consider the Landau--Ginzburg free energy functional
+Consider the free energy functional with $$\phi^4$$ interaction term:
+
 $$
 F[\phi]
 =
@@ -290,18 +291,17 @@ F_0[\phi^- + \phi^+]
 F_0[\phi^-] + F_0[\phi^+].
 $$
 
-
 The partition function becomes
-$$
-Z
-=
-\int \mathcal{D}\phi^- \, \mathcal{D}\phi^+
-\exp\!\left[
-- F_0[\phi^-]
-- F_0[\phi^+]
-- F_{\text{int}}[\phi^- + \phi^+]
-\right].
-$$
+$
+  Z
+  =
+  \int \mathcal{D}\phi^- \, \mathcal{D}\phi^+
+  \exp\!\left[
+  - F_0[\phi^-]
+  - F_0[\phi^+]
+  - F_{\text{int}}[\phi^- + \phi^+]
+  \right].
+$
 
 Integrating out the fast modes defines an effective free energy \\(F'\\) for the
 slow modes:
@@ -311,16 +311,16 @@ Z
 \int \mathcal{D}\phi^- \, e^{-F'[\phi^-]},
 $$
 with
-$$
-e^{-F'[\phi^-]}
-=
-e^{-F_0[\phi^-]}
-\int \mathcal{D}\phi^+
-\exp\!\left[
-- F_0[\phi^+]
-- F_{\text{int}}[\phi^- + \phi^+]
-\right].
-$$
+$
+  e^{-F'[\phi^-]}
+  =
+  e^{-F_0[\phi^-]}
+  \int \mathcal{D}\phi^+
+  \exp\!\left[
+  - F_0[\phi^+]
+  - F_{\text{int}}[\phi^- + \phi^+]
+  \right].
+$
 
 Define expectation values with respect to the Gaussian measure
 $$
@@ -332,40 +332,42 @@ $$
 $$
 
 Then
-$$
-F'[\phi^-]
-=
-F_0[\phi^-]
--
-\ln \left\langle
-e^{-F_{\text{int}}[\phi^- + \phi^+]}
-\right\rangle_+ .
-$$
+$
+  F'[\phi^-]
+  =
+  F_0[\phi^-]
+  -
+  \ln \left\langle
+  e^{-F_{\text{int}}[\phi^- + \phi^+]}
+  \right\rangle_+ .
+$
 
 Expanding the logarithm using the cumulant (linked-cluster) expansion,
-$$
-\ln \left\langle
-e^{-F_{\text{int}}}
-\right\rangle_+
-=
-- \langle F_{\text{int}} \rangle_+
-+
-\frac{1}{2}
-\left(
-\langle F_{\text{int}}^2 \rangle_+
--
-\langle F_{\text{int}} \rangle_+^2
-\right)
--
-\frac{1}{3!}
-\langle F_{\text{int}}^3 \rangle_{+,c}
-+ \cdots ,
-$$
+$
+  \ln \left\langle
+  e^{-F_{\text{int}}}
+  \right\rangle_+
+  =
+  - \langle F_{\text{int}} \rangle_+
+  +
+  \frac{1}{2}
+  \left(
+  \langle F_{\text{int}}^2 \rangle_+
+  -
+  \langle F_{\text{int}} \rangle_+^2
+  \right)
+  -
+  \frac{1}{3!}
+  \langle F_{\text{int}}^3 \rangle_{+,c}
+  + \cdots ,
+$
 where \\(\langle \cdots \rangle_{+,c}\\) denotes connected cumulants.
 
 This expansion generates corrections to the mass, coupling constant, and higher
 operators in the effective free energy for the slow modes. Iterating this procedure
 leads to the Wilsonian renormalization-group flow.
+
+
 
 \medskip
 \noindent\textbf{Order \( g_0 \).}

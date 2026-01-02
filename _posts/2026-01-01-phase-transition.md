@@ -388,7 +388,7 @@ Thus, the only relevant contribution at order \\( g_0 \\) is
 \langle \phi^+(k_3)\phi^+(k_4) \rangle_+
 \,
 (2\pi)^d
-\delta^{(d)}\!\left(
+\delta^{(d)}\left(
 \sum_{i=1}^4 k_i
 \right).
 \\]
@@ -450,7 +450,7 @@ while the factor \\( b^{4-d} \\) reflects the scaling dimension of the quartic c
 
 
 
-### Order \( g_0^2 \)
+### Order \\( g_0^2 \\)
 
 At second order in the coupling, integrating out the fast modes generates
 both a correction to the quartic coupling and a wavefunction renormalization.
@@ -464,7 +464,7 @@ b^{-(d+2)/2}
 \left(1 - g_0^2 A''(0,\Lambda)\right)^{-1}
 \phi^-(k'/b),
 \\]
-where \\( A''(0,\Lambda) \\) arises from the momentum-dependent part of the
+where \\( A''(0, \Lambda) \\) arises from the momentum-dependent part of the
 two-loop diagrams.
 
 The renormalized couplings after one RG step are
@@ -528,78 +528,73 @@ Evaluating the shell integrals for \\( d=4 \\), one finds
 \frac{\Lambda^4}{(\Lambda^2 + \mu^2)^2}.
 \\]
 
-In dimension \( d \ge 4 \), the RG flow decreases \( g \) and the \( \phi^4 \)
-interaction is irrelevant, but for \( d < 4 \) the RG flow increases \( g \)
+In dimension \\( d \ge 4 \\), the RG flow decreases \\( g \\) and the \\( \phi^4 \\)
+interaction is irrelevant, but for \\( d < 4 \\) the RG flow increases \\( g \\)
 and the perturbative expansion is no longer valid.
 
-To gain information about dimensions \( d < 4 \), we perform an
-\textbf{\(\epsilon\)-expansion} about
-\[
+To gain information about dimensions \\( d < 4 \\), we perform an
+**\\(\epsilon\\)-expansion** about
+\\[
 d = 4 - \epsilon .
-\]
+\\]
 We introduce the dimensionless coupling
-\[
+\\[
 \tilde g = \Lambda^{\epsilon} g .
-\]
+\\]
 
 The beta functions become
-\[
+\\[
 \frac{d\mu^2}{ds}
 \simeq
-2\mu^2
-+
+2\mu^2+
 \frac{3}{2\pi^2}
 \frac{\Lambda^4}{\Lambda^2+\mu^2}\,\tilde g ,
-\]
-\[
+\\]
+\\[
 \frac{d\tilde g}{ds}
 \simeq
-\epsilon\,\tilde g
--
+\epsilon\,\tilde g -
 \frac{9}{2\pi^2}
 \frac{\Lambda^4}{(\Lambda^2+\mu^2)^2}\,\tilde g^{\,2} .
-\]
+\\]
 and they have two fixed points:
-\begin{itemize}
-\item \textbf{Gaussian fixed point:}
-\[
+- **Gaussian fixed point**:
+\\[
 \mu^2 = 0,
 \qquad
 \tilde g = 0 .
-\]
+\\]
 
-\item \textbf{Wilson--Fisher fixed point:}
-\[
+- **Wilson--Fisher fixed point**:
+\\[
 \mu_*^2
-=
--\frac{3}{4\pi^2}
+=-\frac{3}{4\pi^2}
 \frac{\Lambda^4}{\Lambda^2+\mu_*^2}\,\tilde g_*,
 \qquad
 \tilde g_*
 =
 \frac{2\pi^2}{9}
 \frac{(\Lambda^2+\mu_*^2)^2}{\Lambda^4}\,\epsilon .
-\]
-Since we are working to leading order in \( \epsilon \), this gives
-\[
+\\]
+Since we are working to leading order in \\( \epsilon \\), this gives
+\\[
 \mu_*^2
-=
--\frac{3}{4\pi^2}\,\Lambda^2 \tilde g_* = \frac{-\Lambda^2\epsilon}{6},
+=-\frac{3}{4\pi^2}\,\Lambda^2 \tilde g_* = \frac{-\Lambda^2\epsilon}{6},
 \qquad
 \tilde g_*
 =
 \frac{2\pi^2}{9}\,\epsilon .
-\]
-\end{itemize}
+\\]
+
 
 We now linearize near the Wilson--Fisher fixed point by writing
-\[
+\\[
 \mu^2 = \mu_*^2 + \delta\mu^2,
 \qquad
 \tilde g = \tilde g_* + \delta\tilde g .
-\]
+\\]
 Linearizing the beta functions yields
-\[
+\\[
 \frac{d}{ds}
 \begin{pmatrix}
 \delta\mu^2 \\
@@ -615,129 +610,115 @@ Linearizing the beta functions yields
 \delta\mu^2 \\
 \delta\tilde g
 \end{pmatrix}.
-\]
+\\]
 
 The eigenvalues are
-\[
+\\[
 \lambda_t = 2 - \frac{\epsilon}{3} + O(\epsilon^2),
 \qquad
 \lambda_g = -\epsilon + O(\epsilon^2).
-\]
+\\]
 
 Thus, the Wilson--Fisher fixed point has one relevant direction and one
 irrelevant direction.
 
-\medskip
-\noindent\textbf{Anomalous dimension.}
+**Anomalous dimension**
 
 Mean-field theory predicts the two-point correlation function
-\[
+\\[
 \langle \phi(x)\phi(0) \rangle
 \sim
 \frac{1}{|x|^{\,d-2}}.
-\]
+\\]
 By dimensional analysis, this implies the scaling
-\[
+\\[
 \phi \sim |x|^{-(d-2)/2}.
-\]
+\\]
 
 In the renormalization group, under a scale transformation
-\[
+\\[
 x \;\to\; x/b,
-\]
+\\]
 the field rescales (in a complicated way) as
-\[
+\\[
 \phi \;\to\; b^{\Delta_\phi}\,\phi,
-\]
+\\]
 where
-\[
+\\[
 \Delta_\phi = \frac{d-2+\eta}{2}
-\]
-is the scaling dimension of the field, and \( \eta \) is called the
-\emph{anomalous dimension}, which is determined by RG calculation.
+\\]
+is the scaling dimension of the field, and \\( \eta \\) is called the
+*anomalous dimension*, which is determined by RG calculation.
 
 This leads to the critical-point correlation function
-\[
+\\[
 \langle \phi(x)\phi(0) \rangle
 \sim
 \frac{1}{|x|^{\,d-2+\eta}}.
-\]
+\\]
 
-From loop corrections in the \( \phi^4 \) theory, the anomalous dimension satisfies
-\[
+From loop corrections in the \\( \phi^4 \\) theory, the anomalous dimension satisfies
+\\[
 \eta = O(\epsilon^2),
-\]
-so to leading order we may set \( \eta \approx 0 \).
+\\]
+so to leading order we may set \\( \eta \approx 0 \\).
 
-In dimension \( d = 4 - \epsilon \), the scaling dimension of the field is therefore
-\[
+In dimension \\( d = 4 - \epsilon \\), the scaling dimension of the field is therefore
+\\[
 \Delta_\phi
 =
 \frac{d - 2 + \eta}{2}
 \approx
 1 - \frac{\epsilon}{2}.
-\]
+\\]
 
-\medskip
-\noindent\textbf{Critical exponents.}
+**Critical exponents**
 
-For \( d = 4 - \epsilon \), define the critical exponent \( \nu \) through the
+For \\( d = 4 - \epsilon \\), define the critical exponent \\( \nu \\) through the
 divergence of the correlation length,
-\[
+\\[
 \xi \sim t^{-\nu},
 \qquad
 t \equiv \frac{T - T_c}{T_c}.
-\]
-Since \( \xi \) has dimensions of length, under the RG rescaling
-\( x \to x/b \) we have
-\[
+\\]
+Since \\( \xi \\) has dimensions of length, under the RG rescaling
+\\( x \to x/b \\) we have
+\\[
 \xi \to \xi/b,
 \qquad
 \Delta_\xi = -1.
-\]
-Using \( \Delta_\xi = -\nu\,\Delta_t \), we obtain
-\[
+\\]
+Using \\( \Delta_\xi = -\nu\,\Delta_t \\), we obtain
+\\[
 \nu = \frac{1}{\Delta_t}
 = \frac{1}{2} + \frac{\epsilon}{12} + O(\epsilon^2).
-\]
+\\]
 
-The order-parameter exponent \( \beta \) is defined by
-\[
+The order-parameter exponent \\( \beta \\) is defined by
+\\[
 \phi \sim t^{\beta}.
-\]
+\\]
 Relating this to scaling dimensions via
-\(
+\\(
 \Delta_\phi = \beta\,\Delta_t
-\),
+\\),
 we find
-\[
+\\[
 \beta
 =
-\frac{1}{2}
--
+\frac{1}{2}-
 \frac{\epsilon}{6}
 +
 O(\epsilon^2).
-\]
+\\]
 
 
 
-Setting \( \epsilon = 1 \) for for $d=3$, we can compare mean-field,
-RG (\(\epsilon\)-expansion), and numerical results:
+Setting \\( \epsilon = 1 \\) for for $d=3$, we can compare mean-field,
+RG (\\(\epsilon\\)-expansion), and numerical results:
 
-\[
-\begin{array}{c|ccc}
-\text{Exponent}
-& \text{Mean field}
-& \text{RG }(\epsilon = 1)
-& \text{Numerical} \\ \hline
-\nu
-& \tfrac{1}{2}
-& 0.58
-& 0.6300 \\
-\beta
-& \tfrac{1}{2}
-& \tfrac{1}{3}
-& 0.3264
-\end{array}
-\]
+| Exponent | Mean field | RG (ε = 1) | Numerical |
+|----------|------------|------------|-----------|
+| ν        | 1/2        | 0.58       | 0.6300    |
+| β        | 1/2        | 1/3        | 0.3264    |
+

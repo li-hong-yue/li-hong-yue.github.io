@@ -165,13 +165,16 @@ of fluctuations in the system.
 The mean-field results hold in high dimensions but break down in low dimensions.
 Recall the situation for \\(T < T_c\\).
 In order to trust the mean-field approximation, these fluctuations must be small
-compared to the background around which they fluctuate. That is, we require
+compared to the background around which they fluctuate. 
 $$
 \langle \phi^2 \rangle \ll \langle \phi \rangle^2 \sim m_0^2 .
 $$
+
 To estimate the size of the fluctuations, note that correlations decay beyond the
 correlation length \\(\xi\\). We therefore integrate the two-point function over a
-ball of radius \\(\xi\\). The relevant dimensionless ratio is
+ball of radius \\(\xi\\). 
+
+The relevant dimensionless ratio is
 $$
 R
 =
@@ -183,23 +186,28 @@ R
 \sim
 \frac{\xi^{2-d}}{m_0^2}.
 $$
+
 In order for mean-field theory to be reliable, we require
 $$
 R \ll 1 .
 $$
 This condition is known as the *Ginzburg criterion*.
 As we approach the critical point, the correlation length diverges and the order
-parameter vanishes. According to mean-field theory,
+parameter vanishes. 
+
+According to mean-field theory,
 $$
 m_0 \sim |T - T_c|^{1/2},
 \qquad
 \xi \sim |T - T_c|^{-1/2}.
 $$
 Substituting these scalings into the expression for \\(R\\), we find
+
 $$
 R \sim |T - T_c|^{(d-4)/2}.
 $$
-We therefore learn that as \\(T \to T_c\\), mean-field theory is trustworthy only if
+
+As \\(T \to T_c\\), mean-field theory is correct only if
 $$
 d > d_c = 4 .
 $$
@@ -207,12 +215,12 @@ The dimension \\(d_c = 4\\) is the *upper critical dimension* for the Ising
 universality class.
 
 ## Renormalization
-The critical exponents we derived from mean-field method are correct for $d>4$.
-We are interested in dimension $d<4$.
+The critical exponents we derived from mean-field method are correct for \\(d>4\\).
+We are interested in dimension \\(d<4\\).
 
 
 Consider the Landau--Ginzburg free energy functional
-\[
+$$
 F[\phi]
 =
 \int d^d x
@@ -223,46 +231,44 @@ F[\phi]
 +
 g_0 \phi^4
 \right],
-\]
-where \( \mu_0^2 \propto T - T_c \) and \( g_0 > 0 \).
+$$
+where \\(\mu_0^2 \propto T - T_c\\) and \\(g_0 > 0\\).
 
-\medskip
-\noindent\textbf{Mode splitting.}
-Introduce an ultraviolet momentum cutoff \( \Lambda \).
+**Mode splitting.**
+Introduce an ultraviolet momentum cutoff \\(\Lambda\\).
 We split the field into slow
-and fast modes by choosing a rescaling factor \( b>1 \):
-\[
+and fast modes by choosing a rescaling factor \\(b>1\\):
+$$
 \phi(x) = \phi^-(x) + \phi^+(x),
-\]
+$$
 where
-\begin{itemize}
-    \item \emph{Slow (long-wavelength) modes}:
-    \[
-    \phi^-(x)
-    =
-    \int_{|k|<\Lambda/b}
-    \frac{d^d k}{(2\pi)^d}
-    \, e^{i k\cdot x} \, \tilde{\phi}(k),
-    \]
-    \item \emph{Fast (short-wavelength) modes}:
-    \[
-    \phi^+(x)
-    =
-    \int_{\Lambda/b \le |k| < \Lambda}
-    \frac{d^d k}{(2\pi)^d}
-    \, e^{i k\cdot x} \, \tilde{\phi}(k).
-    \]
-\end{itemize}
+
+- *Slow (long-wavelength) modes*:
+$$
+\phi^-(x)
+=
+\int_{|k|<\Lambda/b}
+\frac{d^d k}{(2\pi)^d}
+\, e^{i k\cdot x} \, \tilde{\phi}(k),
+$$
+- *Fast (short-wavelength) modes*:
+$$
+\phi^+(x)
+=
+\int_{\Lambda/b \le |k| < \Lambda}
+\frac{d^d k}{(2\pi)^d}
+\, e^{i k\cdot x} \, \tilde{\phi}(k).
+$$
 
 
 Write the free energy as
-\[
+$$
 F[\phi]
 =
 F_0[\phi] + F_{\text{int}}[\phi],
-\]
+$$
 where
-\[
+$$
 F_0[\phi]
 =
 \int d^d x
@@ -275,18 +281,18 @@ F_0[\phi]
 F_{\text{int}}[\phi]
 =
 \int d^d x \, g_0 \phi^4 .
-\]
+$$
 
-Because \( F_0 \) is quadratic, it splits additively:
-\[
+Because \\(F_0\\) is quadratic, it splits additively:
+$$
 F_0[\phi^- + \phi^+]
 =
 F_0[\phi^-] + F_0[\phi^+].
-\]
+$$
 
 
 The partition function becomes
-\[
+$$
 Z
 =
 \int \mathcal{D}\phi^- \, \mathcal{D}\phi^+
@@ -295,17 +301,17 @@ Z
 - F_0[\phi^+]
 - F_{\text{int}}[\phi^- + \phi^+]
 \right].
-\]
+$$
 
-Integrating out the fast modes defines an effective free energy \( F' \) for the
+Integrating out the fast modes defines an effective free energy \\(F'\\) for the
 slow modes:
-\[
+$$
 Z
 =
 \int \mathcal{D}\phi^- \, e^{-F'[\phi^-]},
-\]
+$$
 with
-\[
+$$
 e^{-F'[\phi^-]}
 =
 e^{-F_0[\phi^-]}
@@ -314,19 +320,19 @@ e^{-F_0[\phi^-]}
 - F_0[\phi^+]
 - F_{\text{int}}[\phi^- + \phi^+]
 \right].
-\]
+$$
 
 Define expectation values with respect to the Gaussian measure
-\[
+$$
 \langle \mathcal{O} \rangle_+
 =
 \frac{1}{Z_0^+}
 \int \mathcal{D}\phi^+ \,
 \mathcal{O} \, e^{-F_0[\phi^+]}.
-\]
+$$
 
 Then
-\[
+$$
 F'[\phi^-]
 =
 F_0[\phi^-]
@@ -334,10 +340,10 @@ F_0[\phi^-]
 \ln \left\langle
 e^{-F_{\text{int}}[\phi^- + \phi^+]}
 \right\rangle_+ .
-\]
+$$
 
 Expanding the logarithm using the cumulant (linked-cluster) expansion,
-\[
+$$
 \ln \left\langle
 e^{-F_{\text{int}}}
 \right\rangle_+
@@ -354,17 +360,12 @@ e^{-F_{\text{int}}}
 \frac{1}{3!}
 \langle F_{\text{int}}^3 \rangle_{+,c}
 + \cdots ,
-\]
-where \( \langle \cdots \rangle_{+,c} \) denotes connected cumulants.
+$$
+where \\(\langle \cdots \rangle_{+,c}\\) denotes connected cumulants.
 
-\medskip
 This expansion generates corrections to the mass, coupling constant, and higher
 operators in the effective free energy for the slow modes. Iterating this procedure
 leads to the Wilsonian renormalization-group flow.
-
-
-
-
 
 \medskip
 \noindent\textbf{Order \( g_0 \).}

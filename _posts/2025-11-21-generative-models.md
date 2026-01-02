@@ -1,7 +1,7 @@
 ---
-title: "Introduction to Generative Models"
+title: "Generative Models"
 date: 2025-11-21
-permalink: /study/intro-generative-models/
+permalink: /study/generative-models/
 categories: study
 ---
 

@@ -38,16 +38,11 @@ We model the system with a coarse-grained field $m(x)$ that encodes
 information about the spins $s_i$ in a neighborhood of position $x$.
 
 The local free-energy functional consistent with $\mathbb{Z}_2$ symmetry
-is $$F[m(\mathbf{x})]
-=
-\int d^d x
-\left[
-\frac{1}{2}\,\gamma(T)\, (\partial_\mu m)^2
-+ \frac{1}{2}\,\alpha_2(T)\, m^2
-+ \frac{1}{4}\,\alpha_4(T)\, m^4
-\right],$$ with $\alpha_4(T) > 0$ required for stability.
+is 
+$$F[m(\mathbf{x})]=\int d^d x\left[\frac{1}{2}\,\gamma(T)\, (\partial_\mu m)^2+ \frac{1}{2}\,\alpha_2(T)\, m^2+ \frac{1}{4}\,\alpha_4(T)\, m^4\right],$$ 
+with $\alpha_4(T) > 0$ required for stability.
 
-\## Mean-Field Approximation
+## Mean-Field Approximation
 
 Assume that fluctuations are small, so that $$m(x) = m$$ is spatially
 uniform.
@@ -66,10 +61,10 @@ $$2a(T)m + 4b(T)m^3 = 0 .$$
     \qquad
     m_0 = \sqrt{\frac{-a(T)}{2b(T)}} .$$
 
-Define the critical temperature $T_c$ by $$a(T_c) = 0 .$$ This defines a
-\*second-order phase transition\*.
+Define the *critical temperature* $T_c$ by $$a(T_c) = 0 .$$ This defines a
+*second-order phase transition*.
 
-\### Second-Order Phase Transition
+### Second-Order Phase Transition
 
 Substituting the equilibrium magnetization into the free energy gives
 $$F(T) =
@@ -91,18 +86,18 @@ Because $F(T)$ has different second derivatives above and below $T_c$,
 the heat capacity has a finite discontinuity at $T = T_c$, which is the
 hallmark of a second-order phase transition.
 
-\### Critical Exponent
+### Critical Exponent
 
 Assume $$a(T) = a_0 (T - T_c),
 \qquad
 b(T) = b_0 > 0 .$$
 
-Then for $T < T_c$, $$m_0 = \sqrt{\frac{a_0}{2b_0}} (T_c - T)^{1/2}.$$
+Then for $T < T_c$, $$m_0 = \sqrt{\frac{a_0}{2b_0}} (T_c - T)^{\beta},\quad \beta = \frac{1}{2}.$$
 
-Thus, Landau theory predicts the critical exponent
+Thus, mean field theory predicts the critical exponent
 $$\beta = \frac{1}{2}.$$
 
-\## Correlation Functions
+## Correlation Functions
 
 Mean-field theory does not capture spatial fluctuations. These
 fluctuations are described by correlation functions
@@ -134,13 +129,9 @@ Z_0[0]\,
 J(x)\, D_F(x-y)\, J(y)
 \right].$$
 
-The propagator $D_F(x-y)$ is $$D_F(r)
-=
-\frac{1}{\gamma}
-\int \frac{d^d k}{(2\pi)^d}
-\frac{e^{i k \cdot r}}{k^2 + \xi^{-2}},
-\qquad
-r = x-y,$$ where $$\xi \equiv \sqrt{\frac{\gamma}{\mu^2}}$$ is the
+The propagator $D_F(x-y)$ is 
+$$D_F(r)=\frac{1}{\gamma}\int \frac{d^d k}{(2\pi)^d}\frac{e^{i k \cdot r}}{k^2 + \xi^{-2}},\qquad r = x-y,$$ 
+where $$\xi \equiv \sqrt{\frac{\gamma}{\mu^2}}$$ is the
 correlation length.
 
 By construction, $$\mu^2(T) \propto T - T_c,
@@ -170,8 +161,10 @@ asymptotic behavior is $$\langle \phi(x)\phi(y)\rangle
 \qquad
 r = |x-y|.$$
 
-At distances $r \gg \xi$, correlations decay exponentially, indicating
-short-range order. At distances $r \ll \xi$, correlations decay
+- At distances $r \gg \xi$, correlations decay exponentially, indicating
+short-range order. 
+
+- At distances $r \ll \xi$, correlations decay
 algebraically, reflecting scale-invariant behavior.
 
 Thus, the correlation length $\xi$ sets the characteristic length scale

@@ -566,29 +566,29 @@ and they have two fixed points:
 \\]
 
 - **Wilson--Fisher fixed point**:
-\\[
+$$
 \mu_*^2=-\frac{3}{4\pi^2}
 \frac{\Lambda^4}{\Lambda^2+\mu_*^2}\,\tilde g_*,
-\\]
-\\[
+$$
+$$
 \tilde g_*=\frac{2\pi^2}{9}
 \frac{(\Lambda^2+\mu_*^2)^2}{\Lambda^4}\,\epsilon .
-\\]
+$$
 
 Since we are working to leading order in \\( \epsilon \\), this gives
-\\[
+$$
 \mu_*^2=-\frac{3}{4\pi^2}\,\Lambda^2 \tilde g_* = \frac{-\Lambda^2\epsilon}{6},
-\\]
-\\[
+$$
+$$
 \tilde g_*=
 \frac{2\pi^2}{9}\,\epsilon .
-\\]
+$$
 
 
 We now linearize near the Wilson--Fisher fixed point by writing
-\\[
+$$
 \mu^2 = \mu_*^2 + \delta\mu^2, \tilde g = \tilde g_* + \delta\tilde g .
-\\]
+$$
 Linearizing the beta functions yields
 
 $$

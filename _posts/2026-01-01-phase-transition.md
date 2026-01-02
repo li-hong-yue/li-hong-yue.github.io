@@ -567,34 +567,31 @@ and they have two fixed points:
 
 - **Wilson--Fisher fixed point**:
 \\[
-\mu_*^2
-=-\frac{3}{4\pi^2}
+\mu_*^2=-\frac{3}{4\pi^2}
 \frac{\Lambda^4}{\Lambda^2+\mu_*^2}\,\tilde g_*,
-\qquad
-\tilde g_*
-=
-\frac{2\pi^2}{9}
+\\]
+\\[
+\tilde g_*=\frac{2\pi^2}{9}
 \frac{(\Lambda^2+\mu_*^2)^2}{\Lambda^4}\,\epsilon .
 \\]
+
 Since we are working to leading order in \\( \epsilon \\), this gives
 \\[
-\mu_*^2
-=-\frac{3}{4\pi^2}\,\Lambda^2 \tilde g_* = \frac{-\Lambda^2\epsilon}{6},
-\qquad
-\tilde g_*
-=
+\mu_*^2=-\frac{3}{4\pi^2}\,\Lambda^2 \tilde g_* = \frac{-\Lambda^2\epsilon}{6},
+\\]
+\\[
+\tilde g_*=
 \frac{2\pi^2}{9}\,\epsilon .
 \\]
 
 
 We now linearize near the Wilson--Fisher fixed point by writing
 \\[
-\mu^2 = \mu_*^2 + \delta\mu^2,
-\qquad
-\tilde g = \tilde g_* + \delta\tilde g .
+\mu^2 = \mu_*^2 + \delta\mu^2, \tilde g = \tilde g_* + \delta\tilde g .
 \\]
 Linearizing the beta functions yields
-\\[
+
+$$
 \frac{d}{ds}
 \begin{pmatrix}
 \delta\mu^2 \\
@@ -602,15 +599,14 @@ Linearizing the beta functions yields
 \end{pmatrix}
 =
 \begin{pmatrix}
-2 - \dfrac{\epsilon}{3} &
-\dfrac{3\Lambda^2}{2\pi^2 }\left(1+\dfrac{\epsilon}{6}\right) \\[8pt]
+2 - \dfrac{\epsilon}{3} & \dfrac{3\Lambda^2}{2\pi^2}\left(1+\dfrac{\epsilon}{6}\right) \\[4pt]
 0 & -\epsilon
 \end{pmatrix}
 \begin{pmatrix}
 \delta\mu^2 \\
 \delta\tilde g
 \end{pmatrix}.
-\\]
+$$
 
 The eigenvalues are
 \\[

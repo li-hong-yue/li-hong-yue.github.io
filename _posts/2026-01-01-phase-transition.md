@@ -296,7 +296,7 @@ The partition function becomes
   Z
   =
   \int \mathcal{D}\phi^- \, \mathcal{D}\phi^+
-  \exp\!\left[- F_0[\phi^-]- F_0[\phi^+]- F_{\text{int}}[\phi^- + \phi^+]\right].
+  \exp\left[- F_0[\phi^-]- F_0[\phi^+]- F_{\text{int}}[\phi^- + \phi^+]\right].
 \\]
 
 Integrating out the fast modes defines an effective free energy \\(F'\\) for the
@@ -315,7 +315,7 @@ with
   =
   e^{-F_0[\phi^-]}
   \int \mathcal{D}\phi^+
-  \exp\!\left[- F_0[\phi^+]- F_{\text{int}}[\phi^- + \phi^+]\right].
+  \exp\left[- F_0[\phi^+]- F_{\text{int}}[\phi^- + \phi^+]\right].
 \\]
 
 Define expectation values with respect to the Gaussian measure
@@ -343,16 +343,12 @@ $
   \ln \left\langle
   e^{-F_{\text{int}}}
   \right\rangle_+
-  =- \langle F_{\text{int}} \rangle_+
-  +
-  \frac{1}{2}
-  \left(
+  =- \langle F_{\text{int}} \rangle_+ +\frac{1}{2} \left(
   \langle F_{\text{int}}^2 \rangle_+ -
   \langle F_{\text{int}} \rangle_+^2
   \right) -
   \frac{1}{3!}
-  \langle F_{\text{int}}^3 \rangle_{+,c}
-  + \cdots ,
+  \langle F_{\text{int}}^3 \rangle_{+,c}+ \cdots ,
 $
 where \\(\langle \cdots \rangle_{+,c}\\) denotes connected cumulants.
 
@@ -362,30 +358,24 @@ leads to the Wilsonian renormalization-group flow.
 
 
 
-\medskip
-\noindent\textbf{Order \( g_0 \).}
+### Order \\( g_0 \\)
 
 We expand the interaction term:
-\[
+\\[
 (\phi^- + \phi^+)^4
 =
-(\phi^-)^4
-+ 4(\phi^-)^3 \phi^+
-+ 6(\phi^-)^2 (\phi^+)^2
-+ 4 \phi^- (\phi^+)^3
-+ (\phi^+)^4 .
-\]
+(\phi^-)^4+ 4(\phi^-)^3 \phi^++ 6(\phi^-)^2 (\phi^+)^2+ 4 \phi^- (\phi^+)^3+ (\phi^+)^4 .
+\\]
 
-\begin{itemize}
-    \item \( (\phi^-)^4 \): contributes directly to the quartic coupling of slow modes.
-    \item \( 4(\phi^-)^3 \phi^+ \): odd in \( \phi^+ \), vanishes under the Gaussian average.
-    \item \( 6(\phi^-)^2 (\phi^+)^2 \): gives a nontrivial correction via contraction of fast modes.
-    \item \( 4 \phi^- (\phi^+)^3 \): odd in \( \phi^+ \), vanishes.
-    \item \( (\phi^+)^4 \): contributes only a constant shift to the free energy.
-\end{itemize}
+- \\( (\phi^-)^4 \\): contributes directly to the quartic coupling of slow modes.
+- \\( 4(\phi^-)^3 \phi^+ \\): odd in \\( \phi^+ \\), vanishes under the Gaussian average.
+- \\( 6(\phi^-)^2 (\phi^+)^2 \\): gives a nontrivial correction via contraction of fast modes.
+- \\( 4 \phi^- (\phi^+)^3 \\): odd in \\( \phi^+ \\), vanishes.
+- \\( (\phi^+)^4 \\): contributes only a constant shift to the free energy.
 
-Thus, the only relevant contribution at order \( g_0 \) is
-\[
+
+Thus, the only relevant contribution at order \\( g_0 \\) is
+\\[
 \langle F_{\text{int}} \rangle_+
 =
 6 g_0
@@ -401,10 +391,10 @@ Thus, the only relevant contribution at order \( g_0 \) is
 \delta^{(d)}\!\left(
 \sum_{i=1}^4 k_i
 \right).
-\]
+\\]
 
 Using the Gaussian contraction
-\[
+\\[
 \langle \phi^+(k)\phi^+(k') \rangle_+
 =
 (2\pi)^d
@@ -412,9 +402,9 @@ Using the Gaussian contraction
 \frac{1}{k^2 + \mu_0^2},
 \qquad
 \Lambda/b \le |k| < \Lambda,
-\]
+\\]
 
-\[
+\\[
 \langle F_{\text{int}} \rangle_+
 =
 6 g_0
@@ -426,47 +416,46 @@ Using the Gaussian contraction
 \frac{d^d q}{(2\pi)^d}
 \,
 \frac{1}{q^2 + \mu_0^2}.
-\]
+\\]
 
 This contribution renormalizes the mass term. After integrating out the fast modes
 and rescaling momenta to restore the cutoff,
-\[
+\\[
 k' = b k,
 \qquad
 \phi'(k') = b^{-(d+2)/2}\,\phi^-(k'/b),
-\]
+\\]
 the effective couplings become
-\[
+\\[
 \mu^2(b)
 =
 b^2
 \left(
-\mu_0^2
-+
+\mu_0^2+
 12 g_0
 \int_{\Lambda/b}^{\Lambda}
 \frac{d^d q}{(2\pi)^d}
 \frac{1}{q^2 + \mu_0^2}
 \right),
-\]
-\[
+\\]
+
+\\[
 g(b)
 =
 b^{4-d} g_0 .
-\]
+\\]
 
-Here the factor of \( b^2 \) arises from the canonical scaling dimension of the mass,
-while the factor \( b^{4-d} \) reflects the scaling dimension of the quartic coupling.
+Here the factor of \\( b^2 \\) arises from the canonical scaling dimension of the mass,
+while the factor \\( b^{4-d} \\) reflects the scaling dimension of the quartic coupling.
 
 
 
-\medskip
-\noindent\textbf{Order \( g_0^2 \).}
+### Order \( g_0^2 \)
 
 At second order in the coupling, integrating out the fast modes generates
 both a correction to the quartic coupling and a wavefunction renormalization.
 After rescaling momenta to restore the cutoff,
-\[
+\\[
 k' = b k,
 \qquad
 \phi'(k')
@@ -474,74 +463,70 @@ k' = b k,
 b^{-(d+2)/2}
 \left(1 - g_0^2 A''(0,\Lambda)\right)^{-1}
 \phi^-(k'/b),
-\]
-where \( A''(0,\Lambda) \) arises from the momentum-dependent part of the
+\\]
+where \\( A''(0,\Lambda) \\) arises from the momentum-dependent part of the
 two-loop diagrams.
 
 The renormalized couplings after one RG step are
-\[
+\\[
 \mu^2(b)
 =
 b^2
 \left[
-\mu_0^2
-+
+\mu_0^2+
 12 g_0
 \int_{\Lambda/b}^{\Lambda}
 \frac{d^d q}{(2\pi)^d}
 \frac{1}{q^2 + \mu_0^2}
 \right],
-\]
-\[
+\\]
+\\[
 g(b)
 =
 b^{4-d}
 \left[
-g_0
--
+g_0-
 36 g_0^2
 \int_{\Lambda/b}^{\Lambda}
 \frac{d^d q}{(2\pi)^d}
 \frac{1}{(q^2 + \mu_0^2)^2}
 \right].
-\]
+\\]
 
-\medskip
-\noindent\textbf{beta functions}
+### beta functions
 
-Instead of discrete steps \( \Lambda \to \Lambda/b \), we parametrize the
+Instead of discrete steps \\( \Lambda \to \Lambda/b \\), we parametrize the
 flow continuously by writing
-\[
+\\[
 b = e^{s},
 \qquad
 \Lambda \to \Lambda e^{-s},
-\]
-with \( s \ll 1 \).
+\\]
+with \\( s \ll 1 \\).
 
 The scale dependence of the couplings defines the beta functions:
-\[
+\\[
 \frac{d \mu^2}{d s} = \beta_{\mu^2}(\mu^2,g),
 \qquad
 \frac{d g}{d s} = \beta_g(\mu^2,g).
-\]
+\\]
 
 
 
-Evaluating the shell integrals for \( d=4 \), one finds
-\[
+Evaluating the shell integrals for \\( d=4 \\), one finds
+\\[
 \frac{d \mu^2}{d s}
 =
-2 \mu^2
-+
+2 \mu^2+
 \frac{3 g}{2\pi^2}
 \frac{\Lambda^4}{\Lambda^2 + \mu^2},
-\]
-\[
+\\]
+
+\\[
 \frac{d g}{d s}
-=
--\frac{9 g^2}{2\pi^2}
+=-\frac{9 g^2}{2\pi^2}
 \frac{\Lambda^4}{(\Lambda^2 + \mu^2)^2}.
-\]
+\\]
 
 In dimension \( d \ge 4 \), the RG flow decreases \( g \) and the \( \phi^4 \)
 interaction is irrelevant, but for \( d < 4 \) the RG flow increases \( g \)

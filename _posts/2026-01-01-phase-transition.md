@@ -292,7 +292,7 @@ F_0[\phi^-] + F_0[\phi^+].
 $$
 
 The partition function becomes
-$
+\\[
   Z
   =
   \int \mathcal{D}\phi^- \, \mathcal{D}\phi^+
@@ -301,16 +301,19 @@ $
   - F_0[\phi^+]
   - F_{\text{int}}[\phi^- + \phi^+]
   \right].
-$
+\\]
 
 Integrating out the fast modes defines an effective free energy \\(F'\\) for the
 slow modes:
-$$
+
+\\[
 Z
 =
 \int \mathcal{D}\phi^- \, e^{-F'[\phi^-]},
-$$
+\\]
+
 with
+
 $
   e^{-F'[\phi^-]}
   =

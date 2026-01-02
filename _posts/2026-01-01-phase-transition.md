@@ -8,7 +8,7 @@ categories: study
 
 If we vary temperature and pressure, a liquid can turn into a gas, with an accompanying change in density. This phenomenon is called a **phase transition**.  
 
-## Ising Model
+## 1. Ising Model
 
 Consider the Ising model in $d$ dimensions on a hypercubic lattice of
 side length $L$, with $$N = L^d$$ lattice sites. At each site $i$ there
@@ -31,7 +31,7 @@ The Ising model has a global $\mathbb{Z}_2$ symmetry corresponding to
 $$s_i \rightarrow -s_i.$$
 
 
-## Landau–Ginzburg Theory
+## 2. Landau–Ginzburg Theory and Mean-Field Approximation
 
 We model the system with a coarse-grained field $m(x)$ that encodes
 information about the spins $s_i$ in a neighborhood of position $x$.
@@ -43,7 +43,6 @@ $$F[m(\mathbf{x})]=\int d^d x\left[\frac{1}{2}\,\gamma(T)\, (\partial_\mu m)^2+ 
 
 with $\alpha_4(T) > 0$ required for stability.
 
-## Mean-Field Approximation
 
 Assume that fluctuations are small, so that $$m(x) = m$$ is spatially
 uniform.
@@ -62,7 +61,7 @@ $$2a(T)m + 4b(T)m^3 = 0 .$$
     \qquad
     m_0 = \sqrt{\frac{-a(T)}{2b(T)}} .$$
 
-Define the *critical temperature* $T_c$ by $$a(T_c) = 0 .$$ This defines a
+Define the **critical temperature** $T_c$ by $$a(T_c) = 0 .$$ This defines a
 *second-order phase transition*.
 
 ### Second-Order Phase Transition
@@ -98,7 +97,7 @@ Then for $T < T_c$, $$m_0 = \sqrt{\frac{a_0}{2b_0}} (T_c - T)^{\beta},\quad \bet
 Thus, mean field theory predicts the critical exponent
 $$\beta = \frac{1}{2}.$$
 
-## Correlation Functions
+## 3. Correlation Functions
 
 Mean-field theory does not capture spatial fluctuations. These
 fluctuations are described by correlation functions
@@ -214,7 +213,7 @@ $$
 The dimension \\(d_c = 4\\) is the *upper critical dimension* for the Ising
 universality class.
 
-## Renormalization
+## 4. Renormalization
 The critical exponents we derived from mean-field method are correct for \\(d>4\\).
 We are interested in dimension \\(d<4\\).
 
@@ -261,6 +260,7 @@ $$
 \, e^{i k\cdot x} \, \tilde{\phi}(k).
 $$
 
+**Interaction Picture**
 
 Write the free energy as
 $$
@@ -418,6 +418,9 @@ Using the Gaussian contraction
 \frac{1}{q^2 + \mu_0^2}.
 \\]
 
+
+**field renormalization**
+
 This contribution renormalizes the mass term. After integrating out the fast modes
 and rescaling momenta to restore the cutoff,
 \\[
@@ -425,6 +428,8 @@ k' = b k,
 \qquad
 \phi'(k') = b^{-(d+2)/2}\,\phi^-(k'/b),
 \\]
+
+**Coupling constant renormalization**
 the effective couplings become
 \\[
 \mu^2(b)
@@ -493,7 +498,7 @@ g_0-
 \right].
 \\]
 
-### beta functions
+### beta functions (RG flow equations)
 
 Instead of discrete steps \\( \Lambda \to \Lambda/b \\), we parametrize the
 flow continuously by writing
@@ -718,3 +723,6 @@ RG (\\(\epsilon\\)-expansion), and numerical results:
 | ν        | 1/2        | 0.58       | 0.6300    |
 | β        | 1/2        | 1/3        | 0.3264    |
 
+
+
+**Published:** 2026-01-01
